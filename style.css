@@ -1,3 +1,7 @@
+body{
+    box-sizing: border-box;
+}
+
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
@@ -105,4 +109,20 @@ div .warning{
     width: 100%;
     margin-bottom: 10px;
     padding:10px;
+}
+
+@media screen and (max-width: 480px) {
+    .styled-table{
+        box-sizing: border-box;
+        font-size: 0.7em;
+        min-width: 340px;
+    }
+    .styled-table th,
+    .styled-table td {
+        padding: 6px 8px;
+    }
+    .styled-table td a img{
+        width: 15px;
+        height: 15px;
+    }
 }
